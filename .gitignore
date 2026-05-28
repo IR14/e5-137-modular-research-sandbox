@@ -1,0 +1,28 @@
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Native build artifacts
+build/
+*.so
+*.dylib
+*.dll
+*.o
+
+# Large observational data and generated bulk products
+data/
+outputs/figures/
+outputs/tables/
+outputs/logs/
+
+# Keep curated papers/reports in this release repo.
+!outputs/
+!outputs/papers/
+!outputs/papers/*.tex
+!outputs/reports/
+!outputs/reports/*.md

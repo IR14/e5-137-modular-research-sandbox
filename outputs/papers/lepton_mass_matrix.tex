@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+\title{A Modular Base-$e$ Parameterization of Lepton and Hadron Mass Ratios}
+\author{I. Mikhailov}
+\date{May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a compact phenomenological parameterization of selected lepton and
+hadron mass ratios using the constants $e$, $\pi$, the inverse fine-structure
+constant $\alpha^{-1}$, the topological index $N=5$, the bosonic-string
+reference dimension $D=26$, and the Fibonacci number $F_{26}=121393$.  The
+construction is not derived from a Lagrangian and is not proposed as a
+replacement for the Standard Model.  Its purpose is narrower: to record a
+low-complexity set of algebraic formulae, their numerical residuals, and the
+places where the ansatz fails or requires a non-standard interpretation.
+\end{abstract}
+
+\section{Discrete Basis}
+
+The working basis is
+\begin{equation}
+    P=\{2,3,5,13,137\}, \qquad N=5,\qquad D=26,\qquad F_{26}=121393.
+\end{equation}
+The integer $137$ is treated as a discrete anchor.  In the exploratory
+base-$e$ notation used in this project,
+\begin{equation}
+    137_e = 21100.0210102\ldots_e ,
+\end{equation}
+with the first fractional digit pattern
+\begin{equation}
+    d_{-1},d_{-2},d_{-3},d_{-4},d_{-5},d_{-6},d_{-7}
+    =
+    0,2,1,0,1,0,2.
+\end{equation}
+The earlier digit moment
+\begin{equation}
+    I_5=\sum_{k=1}^{5}k^2d_{-k}=42
+\end{equation}
+has the equivalent topological form
+\begin{equation}
+    I_5=2(D-N)=2(26-5)=42.
+\end{equation}
+The core compression operator is
+\begin{equation}
+    q = \frac{N(N-2)}{e^4\pi^3}
+      = \frac{15}{e^4\pi^3}
+      =0.008860611874290873.
+\end{equation}
+We also use
+\begin{equation}
+    s=\frac{\alpha}{2\pi}, \qquad
+    \delta\phi=\cos(1/N)-\cos(2/N)=0.05900558383835652.
+\end{equation}
+
+\section{Charged Lepton Sector}
+
+The electron is used as the normalization anchor.  The project-level
+normalization is
+\begin{equation}
+    C_e=\frac{1}{1-s\left(N+\frac{2}{eN}\right)},
+\end{equation}
+and the electron scale is written as
+\begin{equation}
+    m_e = 10e^{11}\cos^2(2/N)C_e .
+\end{equation}
+This equation is a normalization convention in the present note.
+
+The muon ratio is
+\begin{equation}
+    \frac{m_\mu}{m_e}
+    =
+    \alpha^{-1}\left(\frac{3}{2}+q\right).
+\end{equation}
+The tau ratio is
+\begin{equation}
+    \frac{m_\tau}{m_e}
+    =
+    \alpha^{-1}\left[N^2+qf_\tau\right],
+\end{equation}
+where
+\begin{equation}
+    f_\tau = 2(D-N)+2e^{-2}+2e^{-7}.
+\end{equation}
+
+\section{Hadron and Baryon Benchmarks}
+
+For the neutral pion, the baseline expression is
+\begin{equation}
+    \frac{m_{\pi^0}}{m_e}
+    =
+    \alpha^{-1}
+    \left[
+        2-\delta\phi
+        -
+        q\left(1+\frac{1}{N}+\frac{1}{\pi}\right)
+    \right].
+\end{equation}
+The Phase 9 audit showed that the literal replacement $q\rightarrow117/137$
+fails by changing the scale of the expression.  The retained compact
+modulation uses the invariant
+\begin{equation}
+    117=DN-13=9\cdot13
+\end{equation}
+only as a small correction:
+\begin{equation}
+    q_{117}=q\left(1-\frac{2^2}{117\cdot137}\right).
+\end{equation}
+The accepted pion benchmark is therefore
+\begin{equation}
+    \frac{m_{\pi^0}}{m_e}
+    =
+    \alpha^{-1}
+    \left[
+        2-\delta\phi
+        -
+        q_{117}\left(1+\frac{1}{N}+\frac{1}{\pi}\right)
+    \right].
+\end{equation}
+
+For the proton ratio, the low-complexity Phase 9 expression is
+\begin{equation}
+    K_p=\frac{M_p}{m_e}
+    =
+    \frac{2F_{26}}{DN}\cos(1/N)
+    \left[
+        1+es+\frac{6}{137^2(D+N+2^2)}
+    \right].
+\end{equation}
+The integer $6$ is the Euler-phi gap
+\begin{equation}
+    \phi(137)-DN=136-130=6.
+\end{equation}
+This should be read as a compact empirical candidate, not as a derivation from
+QCD.
+
+\section{Predicted Sterile Benchmarks}
+
+The charged heavy-lepton extrapolation is
+\begin{equation}
+    \frac{m_{\tau'}}{m_e}
+    =
+    \alpha^{-1}\left[D^2+q(DN)\right],
+\end{equation}
+which gives
+\begin{equation}
+    m_{\tau'}=47.417730830364825~\mathrm{GeV}.
+\end{equation}
+This is above the project-level $45~\mathrm{GeV}$ reference threshold, but
+below the conventional sequential charged-heavy-lepton limit of about
+$100.8~\mathrm{GeV}$.  It therefore cannot be interpreted as an ordinary
+Standard-Model-like fourth charged lepton without additional assumptions.
+
+The sterile neutral benchmark is
+\begin{equation}
+    m_{\nu_{\tau'}}
+    =
+    m_e
+    \left(\frac{F_{26}}{\alpha^{-1}}\right)
+    \left[
+        1+\frac{DN}{\pi}\delta\phi(1-s)
+    \right],
+\end{equation}
+which gives
+\begin{equation}
+    m_{\nu_{\tau'}}=1.5566463427697075~\mathrm{GeV}.
+\end{equation}
+This mass is kinematically cold, but the relic abundance, lifetime, production
+history, and visible decay channels are not determined by the mass formula.
+The benchmark is conditionally viable only for a fully sterile or otherwise
+sufficiently decoupled state.  A simple Fermi-LAT/Galactic-Center audit did not
+support a direct gamma-ray-excess interpretation: the phase-modulated
+annihilation estimates are far below the nominal
+$\sim2\times10^{-26}~\mathrm{cm^3\,s^{-1}}$ scale.
+
+\section{Numerical Summary}
+
+\begin{table}[h]
+\centering
+\caption{Mass-ratio benchmarks recorded by the model.  Residuals are quoted
+relative to the reference values used in the project audit.}
+\begin{tabular}{llll}
+\toprule
+Observable & Formula family & Model value & Residual \\
+\midrule
+$m_\mu/m_e$ & $\alpha^{-1}(3/2+q)$ & $206.76822$ & $-0.29~\mathrm{ppm}$ \\
+$m_\tau/m_e$ & $\alpha^{-1}(N^2+qf_\tau)$ & $3477.22820$ & $-0.022~\mathrm{ppm}$ \\
+$m_{\pi^0}$ & $q_{117}$ pion branch & $134.976797~\mathrm{MeV}$ & $-0.020995~\mathrm{ppm}$ \\
+$M_p/m_e$ & $\phi(137)$ gap branch & $1836.152490$ & $-0.098658~\mathrm{ppm}$ \\
+$m_{\tau'}$ & $\alpha^{-1}[D^2+qDN]$ & $47.417731~\mathrm{GeV}$ & benchmark \\
+$m_{\nu_{\tau'}}$ & sterile branch & $1.556646~\mathrm{GeV}$ & benchmark \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}
+
+The compact relations collected here are best viewed as a modular
+parameterization of selected particle scales.  The formulas are numerically
+tight and reproducible in the accompanying code, but they remain
+phenomenological until connected to a dynamical field theory, collider
+constraints, and standard hadronic calculations.  The useful output of the
+exercise is therefore not a claim of replacement physics, but a falsifiable
+matrix of low-complexity numerical benchmarks.
+
+\end{document}

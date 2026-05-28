@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cosmo-genesis-gradient"
+version = "0.1.0"
+description = "First-pass DESI DR1 LSS anisotropy checks for directional density gradients."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+  { name = "Cosmo Genesis Gradient contributors" }
+]
+dependencies = [
+  "numpy>=2.2",
+  "pandas>=2.2",
+  "tqdm>=4.66",
+  "PyYAML>=6.0",
+  "tabulate>=0.9",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.9"]
+healpix = ["healpy>=1.18"]
+desi = [
+  "astropy>=7.0",
+  "pyarrow>=18.0",
+  "fitsio>=1.2",
+]
+science = [
+  "scipy>=1.14",
+  "pydantic>=2.9",
+]
+test = ["pytest>=8.3"]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.8",
+]
+
+[project.scripts]
+cosmo-gradient = "cosmo_gradient.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cosmo_gradient"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
