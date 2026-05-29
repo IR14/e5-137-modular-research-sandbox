@@ -13,6 +13,17 @@ bookkeeping, not a Standard Model replacement. The GF(137) systems branch is an
 engineering sandbox, not audited cryptography, AGI, or physical quantum
 computing.
 
+## DOI Records
+
+- Sandbox software/reproducibility DOI:
+  [`10.5281/zenodo.20436776`](https://doi.org/10.5281/zenodo.20436776)
+- DESI DR1 directional-gradient preprint DOI:
+  [`10.5281/zenodo.20436979`](https://doi.org/10.5281/zenodo.20436979)
+- GF(137) edge-inference preprint DOI:
+  [`10.5281/zenodo.20437242`](https://doi.org/10.5281/zenodo.20437242)
+- Lepton/hadron mass-parameterization preprint DOI:
+  [`10.5281/zenodo.20437275`](https://doi.org/10.5281/zenodo.20437275)
+
 ## Architecture
 
 ```mermaid
@@ -91,7 +102,8 @@ The observational branch tests the null hypothesis:
 Primary output:
 
 - `papers/desi_dr1_directional_gradient_null_result.md`
-- Zenodo DOI: `10.5281/zenodo.20433867`
+- DESI software package DOI: `10.5281/zenodo.20433884`
+- Preprint DOI: `10.5281/zenodo.20436979`
 
 Representative result:
 
@@ -182,6 +194,12 @@ Publication-oriented files:
 - `outputs/papers/modular_edge_ai.pdf`
 - `outputs/papers/modular_edge_ai_ru.tex`
 - `outputs/papers/modular_edge_ai_ru.pdf`
+
+Associated preprints:
+
+- DESI null result: `10.5281/zenodo.20436979`
+- GF(137) edge inference: `10.5281/zenodo.20437242`
+- Lepton/hadron mass parameterization: `10.5281/zenodo.20437275`
 
 Engineering and audit reports:
 
