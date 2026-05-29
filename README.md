@@ -177,6 +177,7 @@ Publication-oriented files:
 - `outputs/papers/lepton_mass_matrix.tex`
 - `outputs/papers/lepton_mass_matrix.pdf`
 - `outputs/papers/lepton_mass_matrix_ru.tex`
+- `outputs/papers/lepton_mass_matrix_ru.pdf`
 - `outputs/papers/modular_edge_ai.tex`
 - `outputs/papers/modular_edge_ai.pdf`
 - `outputs/papers/modular_edge_ai_ru.tex`
