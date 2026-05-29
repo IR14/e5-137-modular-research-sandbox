@@ -179,6 +179,8 @@ Publication-oriented files:
 - `outputs/papers/lepton_mass_matrix_ru.tex`
 - `outputs/papers/modular_edge_ai.tex`
 - `outputs/papers/modular_edge_ai.pdf`
+- `outputs/papers/modular_edge_ai_ru.tex`
+- `outputs/papers/modular_edge_ai_ru.pdf`
 
 Engineering and audit reports:
 
