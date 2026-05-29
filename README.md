@@ -175,7 +175,9 @@ Publication-oriented files:
 
 - `papers/desi_dr1_directional_gradient_null_result.md`
 - `outputs/papers/lepton_mass_matrix.tex`
+- `outputs/papers/lepton_mass_matrix.pdf`
 - `outputs/papers/modular_edge_ai.tex`
+- `outputs/papers/modular_edge_ai.pdf`
 
 Engineering and audit reports:
 
